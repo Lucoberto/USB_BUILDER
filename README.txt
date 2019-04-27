@@ -1,6 +1,8 @@
 Este software esta desarrollado por la empresa
 ©Fury.OS Software.
 
+Aviso!!! Este programa solo funciona en Windows10 desconozco su funcionamiento en versiones anteriores.
+
    __   _  _  __  __  ____    __   
   /__\ ( \/ )(  )(  )(  _ \  /__\  
  /(__)\ \  /  )(__)(  )(_) )/(__)\ 
@@ -17,6 +19,8 @@ ________________________________________________________________________________
 
 This software is developed by the company
 ©Fury.OS Software.
+
+Warning!!! This program only works in Windows10 I do not know its operation in previous versions.
 
  _   _  ____  __    ____ 
 ( )_( )( ___)(  )  (  _ \
