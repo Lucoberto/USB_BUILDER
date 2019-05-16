@@ -2,54 +2,57 @@ import os, sys, time
 
 opciones = "startmenu"
 def startmenu():
-    global opciones
     os.system("clear")
+    global opciones  
     logo2="""
- _   _ ___________  ______ _   _ _____ _    ______ ___________ 
-| | | /  ___| ___ \ | ___ \ | | |_   _| |   |  _  \  ___| ___ \*
-| | | \ `--.| |_/ / | |_/ / | | | | | | |   | | | | |__ | |_/ /
-| | | |`--. \ ___ \ | ___ \ | | | | | | |   | | | |  __||    / 
-| |_| /\__/ / |_/ / | |_/ / |_| |_| |_| |___| |/ /| |___| |\ \ 
- \___/\____/\____/  \____/ \___/ \___/\_____/___/ \____/\_| \_|
+ _____ _____ _____    _____ _____ _____ __    ____  _____ _____ 
+|  |  |   __| __  |  | __  |  |  |     |  |  |    \|   __| __  |
+|  |  |__   | __ -|  | __ -|  |  |-   -|  |__|  |  |   __|    -|
+|_____|_____|_____|  |_____|_____|_____|_____|____/|_____|__|__|
                 
-____________[<!>]V1.0.1 Developed by @lucoberto[<!>]_____________
+____________[<!>]V1.0.5 Developed by @lucoberto[<!>]_____________
                           [1] Repair USB!
                           [2] Help!
                           [3] Exit!
 """
     print(logo2)
-    op = input("Choose the most appropriate option: ")
+    print("Choose the most appropriate option.")
+    op = input("Usb@usb$~> ")
     if op == "1":
         opciones = "reparacion"
     elif op == "2":
-        opciones = "ayuda"
+        opciones="ayuda"
     elif op == "3":
         sys.exit()
 def ayuda():
     global opciones
-    ayuda="""-> This program tries to repair basic errors at the logical level in the USB memory (s).
+    ayuda1="""-> This program tries to repair basic errors at the logical level in the USB memory (s).
     -> We recommend making a backup.
     -> We do not take care of the damages caused by the program.
     -> Thanks for trusting us."""
-    print(ayuda)
+    print(ayuda1)
     os.system("pause")
     opciones = "startmenu"
 def reparacion():
     global opciones
     os.system("clear")
     os.system("CHKDSK F: /X /F")
+    time.sleep(2.0)
     os.system("CHKDSK G: /X /F")
+    time.sleep(2.0)
     os.system("CHKDSK H: /X /F")
+    time.sleep(2.0)
     os.system("CHKDSK I: /X /F")
+    time.sleep(2.0)
     os.system("CHKDSK J: /X /F")
+    time.sleep(2.0)
     os.system("clear")
     logo=""" 
-______ _____  ___ ________   __  _____ _   _ _____ _   _ _    ______   _    _  ___________ _   ___ _ _ 
-| ___ \  ___|/ _ \|  _  \ \ / / /  ___| | | |  _  | | | | |   |  _  \ | |  | ||  _  | ___ \ | / / | | |
-| |_/ / |__ / /_\ \ | | |\ V /  \ `--.| |_| | | | | | | | |   | | | | | |  | || | | | |_/ / |/ /| | | |
-|    /|  __||  _  | | | | \ /    `--. \  _  | | | | | | | |   | | | | | |/\| || | | |    /|    \| | | |
-| |\ \| |___| | | | |/ /  | |   /\__/ / | | \ \_/ / |_| | |___| |/ /  \  /\  /\ \_/ / |\ \| |\  \_|_|_|
-\_| \_\____/\_| |_/___/   \_/   \____/\_| |_/\___/ \___/\_____/___/    \/  \/  \___/\_| \_\_| \_(_|_|_)
+                               __ __ __ 
+ _____ _____ _____ ____  __ __|  |  |  |
+| __  |   __|  _  |    \|  |  |  |  |  |
+|    -|   __|     |  |  |_   _|__|__|__|
+|__|__|_____|__|__|____/  |_| |__|__|__|
      """
     print(logo)
     time.sleep(5.0)
